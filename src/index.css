@@ -1,0 +1,99 @@
+
+main {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: block;
+}
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+
+/* Tema claro e escuro */
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111111;
+  --link: #3b82f6;
+  --button-bg: #e5e5e5;
+  --button-text: #111;
+}
+
+:root[data-theme="dark"] {
+  --bg: #1e1e1e;
+  --text: #eeeeee;
+  --link: #60a5fa;
+  --button-bg: #333333;
+  --button-text: #eeeeee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+nav a {
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-weight:bold;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.post {
+  max-width: 700px;
+  margin: 0 auto;
+}

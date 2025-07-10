@@ -1,0 +1,20 @@
+:root[data-theme='light'] {
+  --bg: white;
+  --text: black;
+}
+
+:root[data-theme='dark'] {
+  --bg: #121212;
+  --text: #eeeeee;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+
+
